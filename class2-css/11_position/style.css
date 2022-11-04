@@ -17,8 +17,8 @@ p {
 }
 
 .header {
-  position: absolute; /*Position is relative to the page .. similar to the canvas. */
-  /* position: fixed;*/ /*Position is relative to the viewport. */
+  /* position: absolute; Position is relative to the page .. similar to the canvas. */
+  position: fixed;
   background-color: blue;
   width: 100%;
 }
@@ -27,9 +27,9 @@ p {
   background-image: radial-gradient(red, yellow);
 }
 
-/* .overlayText {
+.overlayText {
   font-size: 50px;
-  position: fixed;
+  position: absolute;
   top: 50vh;
   left: 10vw;
-} */
+}
