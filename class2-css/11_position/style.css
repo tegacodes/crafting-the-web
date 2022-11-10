@@ -17,8 +17,8 @@ p {
 }
 
 .header {
-  /* position: absolute; Position is relative to the page .. similar to the canvas. */
-  position: fixed;
+  /* position: absolute;*/   /*Position is relative to the page .. similar to working with the canvas. */
+position: fixed;   /* Position is relative to the viewport.. */
   background-color: blue;
   width: 100%;
 }
@@ -29,7 +29,7 @@ p {
 
 .overlayText {
   font-size: 50px;
-  position: absolute;
+  position: absolute;  /* Position is relative to the viewport.. */
   top: 50vh;
   left: 10vw;
-}
+} */
