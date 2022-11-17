@@ -5,7 +5,7 @@
   gap: 0px 0px;
   grid-template-areas: "col1 col2 col3";
   height: 100vh;
-  /* width: 200vh; */
+  width: 200vh;
 }
 .col1 {
   grid-area: col1;
@@ -27,7 +27,7 @@
   overflow-x: hidden; */
   border-right: 5px solid black;
 }
-
-/* p {
+/* 
+p {
   padding-bottom: 2000px;
 } */

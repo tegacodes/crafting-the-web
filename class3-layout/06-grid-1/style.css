@@ -1,9 +1,9 @@
 .grid1 {
   margin: 10px;
   display: grid;
-  grid-template-columns: 100px 100px 100px;
+  /* grid-template-columns: 100px 100px 100px; */
   /* grid-template-columns: 1fr 1fr 2fr; */
-  /* grid-template-columns: 200px 1fr 1fr; */
+  grid-template-columns: 200px 1fr 1fr;
   background-color: pink;
 }
 
