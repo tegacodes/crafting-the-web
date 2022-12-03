@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="my-button">Click me!</button>
+    <div id="count">0</div>
+
+    <style>
+        /* body {
+            fontSize: 12px;
+        } */
+    </style>
+
+    <script>
+        let total = 0;
+        let fontsize = 16;
+        let b = document.querySelector("#my-button");
+        let countHolder = document.querySelector("#count");
+        //some useful events are:
+        //click, scroll, mousewheel, mouseover, mouseout,
+        //keypress, keyup, keydown
+        b.addEventListener("click", onClick);
+
+        function onClick() {
+            total = total + 1;
+            fontsize = fontsize + 1;
+            countHolder.textContent = total;
+            countHolder.style.fontSize = fontsize + "px";
+
+            //console.log("you clicked me!", total)
+        }
+    </script>
+</body>
+</html>

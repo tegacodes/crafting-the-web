@@ -11,12 +11,12 @@ div {
   display: grid;
   width: 100%;
 
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 5fr;
   grid-template-areas:
-    "one two two two two"
-    "one three three three four"
-    "one five five five five";
+    "one one one one"
+    "two two three three"
+    "four five six seven";
   gap: 5px;
   height: 100vh;
 }
@@ -49,6 +49,20 @@ div {
 .five {
   grid-area: five;
   background-color: paleturquoise;
+}
+
+.six {
+  grid-area: six;
+  background-color: palevioletred;
+}
+
+.seven {
+  grid-area: seven;
+  background-color: lightgray;
+}
+
+.a {
+  background-color: peru;
 }
 
 .main img {
