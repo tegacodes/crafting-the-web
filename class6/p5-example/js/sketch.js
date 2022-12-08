@@ -11,7 +11,7 @@ function setup() {
 
 function draw() {
   //image(name, x, y, w, h);
-  image(img, 0, 0, width);
+  image(img, 0, 0, width, (img.height / img.width) * width);
 
   //get() function gets pixel data from the pixel array
   //at the coordinates
