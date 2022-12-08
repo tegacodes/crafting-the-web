@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-size: 100px;
+        text-align: center;
+        margin: auto;
+        max-width: 900px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>ISS Location</p>
+    Lat:
+    <div id="issLat">ISS loading...</div>
+    Long:
+    <div id="issLon">ISS loading...</div>
+
+    <script>
+      async function getISS() {
+        let response = await fetch("http://api.open-notify.org/iss-now.json");
+        let issData = await response.json();
+        let issLat = issData.iss_position.latitude;
+        document.querySelector("#issLat").textContent = issLat;
+
+        let issLon = issData.iss_position.longitude;
+        document.querySelector("#issLon").textContent = issLon;
+      }
+      setInterval(getISS, 1000);
+    </script>
+  </body>
+</html>
